@@ -32,7 +32,7 @@ function App() {
     if (loading || error) {
       return <p>{error ? error.message : "Loading..."}</p>;
     }
-    //    sssss
+    //    s
     return (
       <div className="flex items-center justify-center m-3">
         <Box width={"400px"}>
