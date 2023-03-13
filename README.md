@@ -67,7 +67,7 @@ The explanation of these bullet points are as follows:
 
 8. This is done by giving the index value a default 10, and if it's lower than 10, making sure that the default index value is changed accordingly
 
-The main struggle I had while doing this project was due to the fact that I don't have much experience using useQuerry, and it cannot be used in a function. I simply lacked the necessary knowledge to implement the search function properly, usually a .filter() function would be satisfactionary, but due to the emdedded status of the data, I couldn't manage to implement the said solution.
+The main struggle I had while doing this project was due to the fact that I don't have much experience using useQuerry, and it cannot be used in a function. I simply lacked the necessary knowledge to implement the search function properly, usually a .filter() function would be satisfactionary, but due to the emdedded status of the data,I also used some() function to go into the object, but I couldn't manage to implement the said solution in a proper way.
 
 As requested I used typescript as much as possible.
 

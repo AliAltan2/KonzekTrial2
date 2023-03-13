@@ -83,7 +83,18 @@ function CountryList() {
   if (loading || error) {
     return <p>{error ? error.message : "Loading..."}</p>;
   }
-  //const filteredData = data.filter((x: string) => true == x.includes(search));
+
+  //let filteredData = data.filter((x: any) => {
+  //  x.countries.some((y: any) =>
+  //    y.country.some((z: any) => z.name === "Turkey")
+  //  );
+  //});
+  // this may be the proper approach since now they are all in an array and we can use filer
+  //console.log(data.countries);
+  //let filteredData = data.countries.filter((x: any) => {
+  //  x.name.includes(search);
+  //});
+
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="text-xl text-bold">Konzek Front-end trial Task</div>
@@ -129,6 +140,7 @@ function CountryList() {
         </form>
       </div>
       {/*mapping can be done via filterdata but couldn't implement it*/}
+
       {data.countries.map(
         (
           country: {
@@ -156,7 +168,6 @@ function CountryList() {
           </ul>
         )
       )}
-      {console.log(search)}
     </div>
   );
 }
